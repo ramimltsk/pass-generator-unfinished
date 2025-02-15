@@ -4,54 +4,179 @@ body {
     align-items: center;
     flex-direction: column;
     background-color: black;
+    font-family: "Roboto", serif;
+    gap: 20px;
+}
+
+.title{
+  color:#24232b ;
+  font-family: "Roboto", serif;
+}
+
+
+.main{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #24232b;
+  padding: 25px;
 }
 
 .main P {
     color: white;
-}
-
-input[type="checkbox"] {
-    /* display: none; */
-}
-
-
-input[type="checkbox"]+label {
-    padding-left: 30px;
-    cursor: pointer;
     font-size: 18px;
 }
 
-input[type="checkbox"]+label::before {
-    content: '';
-    left: 0;
-    top: 0;
+.leng{
+  color: rgba(166,255,175,255);
+  font-size: 40px;
+}
+
+.tip{
+  background-color:#24232b ;
+}
+
+.output{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: white;
+}
+
+.output button{
+  background-color: #24232b;
+  border: 0;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.length{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+  padding-bottom: 20px;
+}
+
+.length p{
+  margin: 0;
+}
+
+.length h1{
+  margin: 0;
+}
+
+/* Hide default checkbox */
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
     width: 20px;
     height: 20px;
-    border: 2px solid #333;
-    background-color: #fff;
-    border-radius: 4px;
-}
-
-
-input[type="checkbox"]:checked+label::before {
-    background-color: #4CAF50;
-    border-color: #4CAF50;
-}
-
-input[type="checkbox"]:checked+label::after {
-    content: '\2714';
-
-    left: 5px;
-    top: 0;
+    border: 3px solid white;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  /* Custom checkmark */
+  input[type="checkbox"]:checked::before {
+    content: "✔";
     font-size: 16px;
-    color: white;
-}
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* Change background when checked */
+  input[type="checkbox"]:checked {
+    background-color: rgba(166,255,175,255);
+    border-color: rgba(166,255,175,255);
+  }
 
-.main {
-    background-color: rgb(40, 36, 44);
-}
-
-.check {
+.check{
     display: flex;
+    align-items: center;
+    gap: 15px;
+}
 
+input[type="range"]{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: rgba(166,255,175,255);
+    height: 7px;
+    width: 100%;
+}
+
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    background: white; /* Change the color */
+    border-radius: 50%; /* Make it a circle */
+    border: 2px solid #fff;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+  }
+
+input[type="range"]::-webkit-slider-thumb:hover{
+    -webkit-appearance: none;
+    appearance: none;
+    background: black;
+    border: 3px solid rgba(166,255,175,255);
+}
+
+.str{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #18171f;
+  width: 90%;
+  padding-left:20px ;
+  padding-right:20px ;
+}
+
+.str h2{
+  font-size: 20px;
+  color: #787782;
+}
+
+.diff{
+  height: 25px;
+  width: 5px;
+  border: 2px solid white;
+}
+
+.difficulty h1{
+  font-size: 30px;
+  color: white;
+}
+
+.difficulty{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.generate{
+  padding: 25px;
+  width: 100%;
+  font-size: 18px;
+  background-color:rgba(166,255,175,255);
+  border: 2px solid rgba(166,255,175,255);
+  color: #24232b;
+}
+
+.generate:hover{
+  background-color:#24232b ;
+  color:rgba(166,255,175,255) ;
 }
