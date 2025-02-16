@@ -102,8 +102,10 @@ numbers.addEventListener("input", () => {
         includeNumbers = false
     }
 
+
     console.log(includeNumbers)
 
+    checkDisable()
 })
 
 uppcase.addEventListener("input", () => {
@@ -114,6 +116,7 @@ uppcase.addEventListener("input", () => {
         includeUpp = false
     }
 
+    checkDisable()
 
 })
 
@@ -126,7 +129,7 @@ lowcase.addEventListener("input", () => {
     }
 
 
-
+    checkDisable()
 })
 
 symbols.addEventListener("input", () => {
@@ -138,7 +141,7 @@ symbols.addEventListener("input", () => {
     }
 
     console.log(includeSymbols)
-
+    checkDisable()
 })
 
 
@@ -150,6 +153,8 @@ function checkDisable() {
     if (!includeNumbers && !includeSymbols && !includeLow && !includeUpp) {
         generate.setAttribute("disabled", true)
     } else {
-        generate.setAttribute("disabled", false)
+        generate.removeAttribute("disabled")
     }
 }
+
+checkDisable() 
