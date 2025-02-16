@@ -8,8 +8,12 @@
     <link rel="stylesheet" href="qqq.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -17,8 +21,8 @@
     <h1 class="title">Password Generator</h1>
     <div class="tip">
         <div class="output">
-            <h1>PTx1f5DaFX</h1>
-            <button><i class="fa-regular fa-copy"></i></button>
+            <h1 class="password">PTx1f5DaFX</h1>
+            <button class="copy"><i class="fa-regular fa-copy"></i></button>
         </div>
 
     </div>
@@ -32,28 +36,28 @@
             </div>
 
             <div class="slider">
-                <input type="range" name="" id="">
+                <input class="rangeinput" type="range" name="" id="" min="5" max="20">
             </div>
         </div>
 
         <div class="checks">
             <div class="check">
-                <input class="chbox" type="checkbox" name="" id="">
+                <input class="chbox uppcase" type="checkbox" name="" id="">
                 <p>Include Uppercase Letters</p>
             </div>
 
             <div class="check">
-                <input class="chbox" type="checkbox" name="" id="">
+                <input class="chbox lowcase" type="checkbox" name="" id="">
                 <p>Include Lowercase Letters</p>
             </div>
 
             <div class="check">
-                <input class="chbox" type="checkbox" name="" id="">
+                <input class="chbox numbers" type="checkbox" name="" id="">
                 <p>Include Numbers</p>
             </div>
 
             <div class="check">
-                <input class="chbox" type="checkbox" name="" id="">
+                <input class="chbox symbols" type="checkbox" name="" id="">
                 <p>Include Symbols</p>
             </div>
         </div>
@@ -64,16 +68,17 @@
 
             <div class="difficulty">
                 <h1>MEDIUM</h1>
-                    <div class="diff one"></div>
-                    <div class="diff two"></div>
-                    <div class="diff three"></div>
-                    <div class="diff four"></div>
+                <div class="diff one"></div>
+                <div class="diff two"></div>
+                <div class="diff three"></div>
+                <div class="diff four"></div>
             </div>
         </div>
 
         <button class="generate">GENERATE <i class="fa-solid fa-arrow-right"></i> </button>
     </div>
 
+    <script src="je.js"></script>
 
 </body>
 
